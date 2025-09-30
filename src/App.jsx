@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Outlet } from "react-router"
+import LoginForm from "./features/auth/components/Login/LoginForm"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
 
   if(!isAuth) {
-    return 
+    return <LoginForm />
   }
 
 
